@@ -1,0 +1,75 @@
+{
+    "InputParameters": {
+        "PayorName": "DentaQuest",
+        "PayorId": 158,
+        "ClientId": "88b80500-d5a9-4c40-a753-34e43695c69e",
+        "AppName": "Revenue Cycle Management",
+        "WebsiteId": "DENTAQUEST_001",
+        "ProcCodes": [
+            "D0120"
+        ],
+        "ScheduleId": 0,
+        "ResponseMessageQueueName": "scraperoutgoingsq"
+    },
+    "PatientData": [
+        {
+            "EligibilityVerificationId": 118818,
+            "PatientId": "20409",
+            "AppointmentId": "291907",
+            "AppointmentDateTime": "2023-08-02T09:00:00+00:00",
+            "LastName": "Paulson",
+            "FirstName": "Adaiah",
+            "BirthDate": "11/28/2017",
+            "Relationship": "Self",
+            "PatientMemberId": "623741266",
+            "SubscriberId": "723752550",
+            "SubscriberFirstName": "Meaghan",
+            "SubscriberLastName": "Lavalley",
+            "SubscriberBirthDate": "07/23/2012",
+            "ClinicServerId": "8d9d8527-8ee6-4697-8f41-4415ca6a26c0",
+            "ClinicNum": "2",
+            "ClinicName": "The Smiley Tooth - Sulphur Springs",
+            "ClinicLocation": "Sulphur Springs ",
+            "ClinicAddress1": "804 Gilmer St.",
+            "ClinicAddress2": "",
+            "ClinicZip": "75482-4328",
+            "ProviderFirstName": "Jennifer",
+            "ProviderLastName": "Chou",
+            "SpecialityType": "Pediatrics"
+        }
+    ],
+    "Login": {
+        "Url": "https://connectsso.dentaquest.com/authsso/providersso/SSOProviderLogin.aspx?TYPE=33554433&REALMOID=06-6a4c193d-7520-4f3d-b194-83367a3ef454&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-kSqO3O4jRCSk9qqzbPcoTSjt1%2fdC6MLuwWf19frmMVfjO3ky%2bv6P02wHtOYGhNQ3Uqgm662bIsg0jgE%2bG59NfYnZup3NqXTz&TARGET=-SM-https%3a%2f%2fconnectsso%2edentaquest%2ecom%2fprovideraccessv2%2findex%2ehtml",
+        "LoginId": "payoraccessSDB2",
+        "Password": "Changeme1!",
+        "OtpRequired": false,
+        "OtpEmail": "TODO"
+    },
+    "Xpaths": [
+        {
+            "XPath": "{\"Xpaths\": [{\"UsernameXpath\": \"//input[contains(@id,'USER')]\", \"PasswordXpath\": \"//input[contains(@id,'PASSWORD')]\", \"LoginButtonXpath\": \"//input[contains(@id,'btnSubmit')]\", \"OtpInputXpath\": \"\", \"OtpSubmitXpath\": \"\", \"PreSteps\": [], \"PostSteps\": [], \"OtpXpath\": \"\", \"OtpRequired\": false}]}",
+            "DataContextName": "EligibilityLogin"
+        },
+        {
+            "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[],\"windowChange\":1,\"window_number_before_clicks\":1,\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[],\"ElementScreenshot\":\"//div[contains(@class,'bodyContainer')]\",\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Name\"},\"xpath\":\"(//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Name')])[1]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Relationship\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Relationship')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"DateOfBirth\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Birthdate')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Gender\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Gender')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"PrimaryAddress\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Address')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"WorkPhone\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Work Phone')]//span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FaxNumber\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Fax Number')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"PrimaryHomePhone\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Primary Phone')]//span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Provider\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Provider Name')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Office\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Provider Office')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ServiceLocation\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Member Id')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ProviderEffectiveDate\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Effective Date')]//span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ProviderTerminationDate\"},\"xpath\":\"//dl[contains(@class,'slds-list_horizontal slds-wrap')]//dd[contains(@title,'Termination')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Plan\"},\"xpath\":\"(//span[contains(@class,'slds-form-element__static')])[1]\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(text(),'Service History')]\"],\"fileds\":[],\"AfterClickWait\":15},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(@class,'printSpacing printIcon')]\"],\"fileds\":[],\"windowChange\":1,\"window_print\":true,\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(text(),'Eligibility History')]\"],\"fileds\":[],\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(@class,'printIcon bodyLink printButton floatRight')]\"],\"fileds\":[],\"windowChange\":1,\"window_print\":true,\"AfterClickWait\":7},\"xpath\":\"\"}]}",
+            "DataContextName": "EligibilityPatientVerification"
+        },
+        {
+            "XPath": "{\"Scraping\": false, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [\"//a[contains(text(),'Back to Search')]\"], \"fileds\": []}, \"xpath\": \"\"}]}",
+            "DataContextName": "SearchDashboardFilter"
+        },
+        {
+            "XPath": "{\"AllowPdfMerging\": true, \"forCore\": true, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": []}, \"xpath\": \"\"}]}",
+            "DataContextName": "EligibilityFiles"
+        }
+    ],
+    "SearchParameters": [
+        {
+            "Id": 153,
+            "EligibilityPayorInfoId": 159,
+            "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//span[contains(text(),'Claims')]\",\"//span[contains(text(),'Claim Search')]\"],\"AdditonalInfo\":{\"AfterClickWait\":5}},\"SearchButtonXpath\":\"//button[contains(text(),'Search')]\",\"PostSteps\":{\"AdditonalInfo\":{\"aftersleep\":8},\"Clicks\":[\"//*[@id='claimResultsTable']/tbody/tr[1]/td[1]/span/a\"]}},\"Queries\":[{\"Data\":\"BirthDate\",\"Xpath\":\"//input[contains(@class,'memberDOB')]\"},{\"Data\":\"SubscriberId\",\"Xpath\":\"//input[contains(@class,'memberNumber')]\"},{\"Data\":\"FirstName\",\"Xpath\":\"//input[contains(@class,'memberFirstName')]\"},{\"Data\":\"LastName\",\"Xpath\":\"//input[contains(@class,'memberLastName')]\"}]}}",
+            "IsActive": true,
+            "ProductCategoryId": 4
+        }
+    ]
+}

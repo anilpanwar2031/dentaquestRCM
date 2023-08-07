@@ -1,0 +1,95 @@
+{
+    "InputParameters": {
+        "PayorName": "DentaQuest",
+        "PayorId": 158,
+        "ClientId": "88b80500-d5a9-4c40-a753-34e43695c69e",
+        "AppName": "Revenue Cycle Management",
+        "WebsiteId": "DENTAQUEST_001",
+        "ProcCodes": [
+            "D0120"
+        ],
+        "ScheduleId": 0,
+        "ResponseMessageQueueName": "scraperoutgoingsq"
+    },
+    "PatientData": [
+        {
+            "EligibilityVerificationId": 118818,
+            "PatientId": "20409",
+            "AppointmentId": "291907",
+            "AppointmentDateTime": "2023-08-02T09:00:00+00:00",
+            "LastName": "Paulson",
+            "FirstName": "Adaiah",
+            "BirthDate": "11/28/2017",
+            "Relationship": "Self",
+            "PatientMemberId": "623741266",
+            "SubscriberId": "723752550",
+            "SubscriberFirstName": "Meaghan",
+            "SubscriberLastName": "Lavalley",
+            "SubscriberBirthDate": "07/23/2012",
+            "ClinicServerId": "8d9d8527-8ee6-4697-8f41-4415ca6a26c0",
+            "ClinicNum": "2",
+            "ClinicName": "The Smiley Tooth - Sulphur Springs",
+            "ClinicLocation": "Sulphur Springs ",
+            "ClinicAddress1": "804 Gilmer St.",
+            "ClinicAddress2": "",
+            "ClinicZip": "75482-4328",
+            "ProviderFirstName": "Jennifer",
+            "ProviderLastName": "Chou",
+            "SpecialityType": "Pediatrics",
+            "OfficeLocation": "Park Place Pediatric Dentistry & Orthodontics HRST"
+        }
+
+    ],
+    "Login": {
+        "Url": "https://connectsso.dentaquest.com/authsso/providersso/SSOProviderLogin.aspx?TYPE=33554433&REALMOID=06-6a4c193d-7520-4f3d-b194-83367a3ef454&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-kSqO3O4jRCSk9qqzbPcoTSjt1%2fdC6MLuwWf19frmMVfjO3ky%2bv6P02wHtOYGhNQ3Uqgm662bIsg0jgE%2bG59NfYnZup3NqXTz&TARGET=-SM-https%3a%2f%2fconnectsso%2edentaquest%2ecom%2fprovideraccessv2%2findex%2ehtml",
+        "LoginId": "payoraccessSDB2",
+        "Password": "Changeme1!",
+        "OtpRequired": false,
+        "OtpEmail": "TODO"
+    },
+    "Xpaths": [
+        {
+            "XPath": "{\"Xpaths\": [{\"UsernameXpath\": \"//input[contains(@id,'USER')]\", \"PasswordXpath\": \"//input[contains(@id,'PASSWORD')]\", \"LoginButtonXpath\": \"//input[contains(@id,'btnSubmit')]\", \"OtpInputXpath\": \"\", \"OtpSubmitXpath\": \"\", \"PreSteps\": [], \"PostSteps\": [], \"OtpXpath\": \"\", \"OtpRequired\": false}]}",
+            "DataContextName": "EligibilityLogin"
+        },
+        {
+            "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[],\"windowChange\":1,\"window_number_before_clicks\":1,\"AfterClickWait\":10},\"xpath\":\"\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ClaimNumber\"},\"xpath\":\"//h1[contains(text(),'Claim')]/following-sibling::div/div/h3\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Name\"},\"xpath\":\"//dd[contains(@title,'Member Name')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"DOB\"},\"xpath\":\"//dd[contains(@title,'DOB')]/lightning-formatted-date-time\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"MemberNumber\"},\"xpath\":\"//dd[contains(@title,'Member Number')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Plan\"},\"xpath\":\"//dd[contains(@title,'Plan')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Provider\"},\"xpath\":\"//dt[contains(text(),'Provider')]/following-sibling::dd\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ProviderAddress\"},\"xpath\":\"//dd[contains(@title,'Service Location')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Business\"},\"xpath\":\"//dd[contains(@title,'Business')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"TotalBilledAmount\"},\"xpath\":\"//dt[contains(text(),'Total Billed Amount:')]/following-sibling::dd/span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"TotalPatientPay\"},\"xpath\":\"//dt[contains(text(),'Total Patient Pay')]/following-sibling::dd/span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Payment\"},\"xpath\":\"//dt[contains(text(),'Payment')]/following-sibling::dd/span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"PaymentDate\"},\"xpath\":\"//dt[contains(text(),'Payment Date')]/following-sibling::dd/lightning-formatted-date-time\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Check/ETFNumber\"},\"xpath\":\"//dt[contains(text(),'Check/ETF Number')]/following-sibling::dd\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ReceivedDate\"},\"xpath\":\"//dt[contains(text(),'Received Date')]/following-sibling::dd/lightning-formatted-date-time\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FinalDecisionDate\"},\"xpath\":\"//dt[contains(text(),'Final Decision Date')]/following-sibling::dd/lightning-formatted-date-time\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Notes\"},\"xpath\":\"//dt[contains(text(),'Notes')]/following-sibling::dd\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Notes\"},\"xpath\":\"//dt[contains(text(),'Notes')]/following-sibling::dd\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(@class,'printIcon testscript_claimDetailPrint')]\"],\"sleep\":10,\"fileds\":[]},\"xpath\":\"//td/td/tr[@id='AaBb']\"}]}",
+            "DataContextName": "RcmEobClaimMaster"
+        },
+        {
+            "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[]},\"xpath\":\"//table[contains(@class,'tableClass')]\"}]}",
+            "DataContextName": "RcmEobClaimDetail"
+        },
+        {
+            "XPath": "{\"AllowPdfMerging\": true, \"forCore\": true, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": []}, \"xpath\": \"\"}]}",
+            "DataContextName": "EligibilityFiles"
+        },
+        {
+          "Id": 20,
+          "ClientId": null,
+          "EligibilityPayorInfoId": 12,
+          "DataContextId": 177,
+          "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[]},\"xpath\":\"\"}]}",
+          "IsActive": true,
+          "DataContextName": "SearchDashboardFilter",
+          "ProductCategoryId": 2
+    }
+
+    ],
+    "SearchParameters": [
+        {
+            "Id": 153,
+            "EligibilityPayorInfoId": 159,
+            "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//span[contains(text(),'Claims')]\",\"//span[contains(text(),'Claim Search')]\"],\"AdditonalInfo\":{\"AfterClickWait\":5}},\"SearchButtonXpath\":\"//button[contains(text(),'Search')]\",\"PostSteps\":{\"AdditonalInfo\":{\"aftersleep\":8},\"Clicks\":[\"//*[@id='claimResultsTable']/tbody/tr[1]/td[1]/span/a\"]}},\"Queries\":[{\"Data\":\"BirthDate\",\"Xpath\":\"//input[contains(@class,'memberDOB')]\"},{\"Data\":\"SubscriberId\",\"Xpath\":\"//input[contains(@class,'memberNumber')]\"},{\"Data\":\"FirstName\",\"Xpath\":\"//input[contains(@class,'memberFirstName')]\"},{\"Data\":\"LastName\",\"Xpath\":\"//input[contains(@class,'memberLastName')]\"}]}}",
+            "IsActive": true,
+            "ProductCategoryId": 2
+        },
+        {
+            "Id": 153,
+            "EligibilityPayorInfoId": 159,
+            "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[],\"AdditonalInfo\":{\"AfterClickWait\":5}},\"SearchButtonXpath\":\"//button[contains(text(),'Search')]\",\"PostSteps\":{\"AdditonalInfo\":{\"aftersleep\":8},\"Clicks\":[\"//*[@id='claimResultsTable']/tbody/tr[1]/td[1]/span/a\"]}},\"Queries\":[{\"AdditonalInfo\":{\"Click\":[\"//input[@id='optionSelectMS']\"],\"AfterClickWait\":2,\"fileds\":\"\"},\"xpath\":\"\"},{\"Data\":\"OfficeLocation\",\"Xpath\":\"//span[contains(@data-display,'{OfficeLocation}')]\"},{\"AdditonalInfo\":{\"Click\":[\"//input[@id='optionSelectMS']\"],\"AfterClickWait\":2,\"fileds\":\"\"},\"xpath\":\"\"},{\"Data\":\"Provider\",\"Xpath\":\"//span[contains(@data-display,'{Provider}')]\"},{\"Data\":\"ClaimNumber\",\"Xpath\":\"//label/span[contains(text(),'Claim Number')]/following-sibling::input\"}]}}",
+            "IsActive": true,
+            "ProductCategoryId": 2
+        }
+    ]
+}
